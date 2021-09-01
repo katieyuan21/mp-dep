@@ -1,5 +1,5 @@
 # mp-dep
-Counter of partially independent &amp; fully embedded structures
+Counter of partially independent &amp; fully embedded structures in this MP
 
 Linux commands to call the counter and store the results with headings:
 
