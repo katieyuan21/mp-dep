@@ -1,4 +1,3 @@
-#Deep First Search
 import os
 import glob
 import argparse
