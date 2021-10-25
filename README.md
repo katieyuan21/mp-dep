@@ -1,5 +1,5 @@
 # mp-dep
-Counter of partially independent &amp; fully embedded structures in this MP
+Counter of partially independent &amp; fully embedded structures for Master Project
 
 ## Input format
 rsd
