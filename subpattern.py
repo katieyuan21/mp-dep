@@ -11,8 +11,7 @@ class Node:
 
 
 def parse_rsd(path):
-    # 打印文件路径
-    #print(path)
+    # print(path)
     with open(path) as f:
         data = [(int(line[0]), int(line[6])) for line in [line.split("\t") for line in f.readlines()] if len(line) >= 8]
     nodes = [Node(nid, pid) for nid, pid in data]
@@ -85,15 +84,15 @@ class Statistics:
             if not node.node_id in self.__partially_independent_nodes:
                 result, nodes = is_partially_independent(node)
                 if result:
-                    # 打印Partially-Independent-Structure节点
-                    #print(nodes)
+                    # Partially-Independent-Structure
+                    # print(nodes)
                     self.n_partially_independent += 1
                     self.__partially_independent_nodes |= set(nodes)
             if not node.node_id in self.__fully_embedded_nodes:
                 result, nodes = is_fully_embedded(node)
                 if result:
-                    # 打印Fully-Embedded-Structure节点
-                    #print(nodes)
+                    # Fully-Embedded-Structure
+                    # print(nodes)
                     self.n_fully_embedded += 1
                     self.__fully_embedded_nodes |= set(nodes)
             for child in node.children:
